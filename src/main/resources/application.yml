@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
     datasource:
@@ -43,10 +43,10 @@ spring:
         max-file-size: 50mb
         max-request-size: 50mb
     # security
-    security:
-      user:
-        name: waver
-        password: waver
+#    security:
+#      user:
+#        name: waver
+#        password: waver
     mvc:
       favicon:
         enabled: false

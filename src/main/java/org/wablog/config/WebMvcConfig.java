@@ -26,7 +26,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
         registry.addResourceHandler("/fonts/**").addResourceLocations("classpath:/static/fonts/");
         registry.addResourceHandler("/media/**").addResourceLocations("classpath:/static/media/");
         registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/static/assets/");
-        registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/static/images/favicon.svg/");
+        // registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/static/images/favicon.svg/");
     }
 
     @Override
