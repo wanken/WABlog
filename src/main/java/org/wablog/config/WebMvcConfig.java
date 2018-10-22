@@ -3,6 +3,7 @@ package org.wablog.config;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 /**
@@ -26,11 +27,15 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
         registry.addResourceHandler("/fonts/**").addResourceLocations("classpath:/static/fonts/");
         registry.addResourceHandler("/media/**").addResourceLocations("classpath:/static/media/");
         registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/static/assets/");
-        // registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/static/images/favicon.svg/");
     }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
     }
 
+
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/").setViewName("index.html");
+    }
 }

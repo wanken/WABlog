@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8080
 
 spring:
     datasource:
@@ -24,7 +24,6 @@ spring:
         maxPoolPreparedStatementPerConnectionSize: 20
         filters: stat,wall,log4j
         connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
-
     jpa:
         database: mysql
         show-sql: true
@@ -42,18 +41,17 @@ spring:
         enabled: true
         max-file-size: 50mb
         max-request-size: 50mb
-    # security
+# security
 #    security:
 #      user:
 #        name: waver
 #        password: waver
-    mvc:
-      favicon:
-        enabled: false
-
 #pagehelper分页插件
 pagehelper:
     helperDialect: mysql
     reasonable: true
     supportMethodsArguments: true
     params: count=countSql
+
+mybatis:
+    check-config-location: false
