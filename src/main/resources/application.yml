@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8000
 
 spring:
     datasource:
@@ -30,7 +30,9 @@ spring:
         open-in-view: true
         hibernate:
           ddl-auto: update
-
+    mvc:
+        favicon:
+            enabled: false
     thymeleaf:
         prefix: classpath:/templates/
         mode: HTML
@@ -41,17 +43,19 @@ spring:
         enabled: true
         max-file-size: 50mb
         max-request-size: 50mb
+# 控制台输出颜色
+    output:
+        ansi:
+            enabled: always
+logging:
+    level:
+        org:
+            hibernate:
+                SQL: DEBUG
 # security
 #    security:
 #      user:
 #        name: waver
 #        password: waver
-#pagehelper分页插件
-pagehelper:
-    helperDialect: mysql
-    reasonable: true
-    supportMethodsArguments: true
-    params: count=countSql
 
-mybatis:
-    check-config-location: false
+

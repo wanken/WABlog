@@ -27,10 +27,13 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
         registry.addResourceHandler("/fonts/**").addResourceLocations("classpath:/static/fonts/");
         registry.addResourceHandler("/media/**").addResourceLocations("classpath:/static/media/");
         registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/static/assets/");
+        registry.addResourceHandler("/favicon.ico").addResourceLocations("classpath:/static/favicon.ico");
+        registry.addResourceHandler("/index").addResourceLocations("classpath:/static/templates/index.html");
     }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+
     }
 
 

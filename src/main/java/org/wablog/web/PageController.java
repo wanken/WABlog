@@ -1,4 +1,4 @@
-package org.wablog.controller;
+package org.wablog.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
