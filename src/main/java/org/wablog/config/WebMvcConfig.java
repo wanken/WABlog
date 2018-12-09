@@ -14,31 +14,4 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurationSupport {
 
-    /**
-     * 配置静态资源映射
-     *
-     * @param registry  注册器
-     */
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/css/**").addResourceLocations("classpath:/static/css/");
-        registry.addResourceHandler("/images/**").addResourceLocations("classpath:/static/images/");
-        registry.addResourceHandler("/js/**").addResourceLocations("classpath:/static/js/");
-        registry.addResourceHandler("/fonts/**").addResourceLocations("classpath:/static/fonts/");
-        registry.addResourceHandler("/media/**").addResourceLocations("classpath:/static/media/");
-        registry.addResourceHandler("/assets/**").addResourceLocations("classpath:/static/assets/");
-        registry.addResourceHandler("/favicon.ico").addResourceLocations("classpath:/static/favicon.ico");
-        registry.addResourceHandler("/index").addResourceLocations("classpath:/static/templates/index.html");
-    }
-
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-
-    }
-
-
-    @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("index.html");
-    }
 }

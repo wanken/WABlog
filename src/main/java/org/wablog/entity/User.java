@@ -1,26 +1,36 @@
-package org.wablog.domain;
+package org.wablog.entity;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * @author waver
- * @date 2018/10/25 11:42
+ * @date 2018/10/31 11:57
  */
 @Entity
 @Table(name = "user", schema = "wablog")
-public class User {
+public class User implements UserDetails {
     private long id;
     private String email;
     private String username;
     private String password;
     private Long refSettingsId;
-    private Integer passwdErrorCount;
+    private Integer passwordErrorCount;
     private int status;
-    private Timestamp createTiem;
+    private Timestamp createTime;
     private Timestamp updateTime;
     private Timestamp lastSignTime;
+
+    /**
+     * 设置用户和角色的多对多关系
+     */
+    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
+    private List<Role> roles;
 
     @Id
     @Column(name = "id")
@@ -42,16 +52,43 @@ public class User {
         this.email = email;
     }
 
+    @Override
     @Basic
     @Column(name = "username")
     public String getUsername() {
         return username;
     }
 
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
+    }
+
     public void setUsername(String username) {
         this.username = username;
     }
 
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return  Collections.singletonList(new SimpleGrantedAuthority("READER"));
+    }
+
+    @Override
     @Basic
     @Column(name = "password")
     public String getPassword() {
@@ -73,13 +110,13 @@ public class User {
     }
 
     @Basic
-    @Column(name = "passwd_error_count")
-    public Integer getPasswdErrorCount() {
-        return passwdErrorCount;
+    @Column(name = "password_error_count")
+    public Integer getPasswordErrorCount() {
+        return passwordErrorCount;
     }
 
-    public void setPasswdErrorCount(Integer passwdErrorCount) {
-        this.passwdErrorCount = passwdErrorCount;
+    public void setPasswordErrorCount(Integer passwordErrorCount) {
+        this.passwordErrorCount = passwordErrorCount;
     }
 
     @Basic
@@ -93,13 +130,13 @@ public class User {
     }
 
     @Basic
-    @Column(name = "create_tiem")
-    public Timestamp getCreateTiem() {
-        return createTiem;
+    @Column(name = "create_time")
+    public Timestamp getCreateTime() {
+        return createTime;
     }
 
-    public void setCreateTiem(Timestamp createTiem) {
-        this.createTiem = createTiem;
+    public void setCreateTime(Timestamp createTime) {
+        this.createTime = createTime;
     }
 
     @Basic
@@ -122,6 +159,14 @@ public class User {
         this.lastSignTime = lastSignTime;
     }
 
+    private List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -137,14 +182,14 @@ public class User {
                 Objects.equals(username, that.username) &&
                 Objects.equals(password, that.password) &&
                 Objects.equals(refSettingsId, that.refSettingsId) &&
-                Objects.equals(passwdErrorCount, that.passwdErrorCount) &&
-                Objects.equals(createTiem, that.createTiem) &&
+                Objects.equals(passwordErrorCount, that.passwordErrorCount) &&
+                Objects.equals(createTime, that.createTime) &&
                 Objects.equals(updateTime, that.updateTime) &&
                 Objects.equals(lastSignTime, that.lastSignTime);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, email, username, password, refSettingsId, passwdErrorCount, status, createTiem, updateTime, lastSignTime);
+        return Objects.hash(id, email, username, password, refSettingsId, passwordErrorCount, status, createTime, updateTime, lastSignTime);
     }
 }

@@ -1,11 +1,11 @@
-package org.wablog.domain;
+package org.wablog.entity;
 
 import javax.persistence.*;
 import java.util.Objects;
 
 /**
  * @author waver
- * @date 2018/10/25 11:42
+ * @date 2018/10/31 11:57
  */
 @Entity
 @Table(name = "authority", schema = "wablog")
@@ -15,6 +15,7 @@ public class Authority {
     private int owner;
     private int group;
     private int others;
+    private String permissionName;
 
     @Id
     @Column(name = "id")
@@ -27,13 +28,13 @@ public class Authority {
     }
 
     @Basic
-    @Column(name = "permission_name")
+    @Column(name = "authority_name")
     public String getAuthorityName() {
         return authorityName;
     }
 
-    public void setAuthorityName(String permissionName) {
-        this.authorityName = permissionName;
+    public void setAuthorityName(String authorityName) {
+        this.authorityName = authorityName;
     }
 
     @Basic
@@ -66,6 +67,16 @@ public class Authority {
         this.others = others;
     }
 
+    @Basic
+    @Column(name = "permission_name")
+    public String getPermissionName() {
+        return permissionName;
+    }
+
+    public void setPermissionName(String permissionName) {
+        this.permissionName = permissionName;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -79,11 +90,12 @@ public class Authority {
                 owner == that.owner &&
                 group == that.group &&
                 others == that.others &&
-                Objects.equals(authorityName, that.authorityName);
+                Objects.equals(authorityName, that.authorityName) &&
+                Objects.equals(permissionName, that.permissionName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, authorityName, owner, group, others);
+        return Objects.hash(id, authorityName, owner, group, others, permissionName);
     }
 }

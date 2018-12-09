@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh-CN">
+<header th:include="header"></header>
+<body>
+<div th:include="left"></div>
+<div class="login-page sidebar-collapse">
+    <div>
+        <form th:action="@{/user/login}" method="post">
+            <label>用户名:
+                <input name="username" type="text">
+            </label>
+            <input name="password" type="password">
+            <input type="submit">
+        </form>
+    </div>
+</div>
+<footer th:include="footer"></footer>
+</body>
+</html>

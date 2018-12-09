@@ -1,18 +1,18 @@
-package org.wablog.domain;
+package org.wablog.entity;
 
 import javax.persistence.*;
 import java.util.Objects;
 
 /**
  * @author waver
- * @date 2018/10/25 11:42
+ * @date 2018/10/31 11:57
  */
 @Entity
 @Table(name = "role", schema = "wablog")
 public class Role {
     private int id;
-    private String roleName;
-    private String rolePhoto;
+    private String name;
+    private String photo;
 
     @Id
     @Column(name = "id")
@@ -25,23 +25,23 @@ public class Role {
     }
 
     @Basic
-    @Column(name = "role_name")
-    public String getRoleName() {
-        return roleName;
+    @Column(name = "name")
+    public String getName() {
+        return name;
     }
 
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Basic
-    @Column(name = "role_photo")
-    public String getRolePhoto() {
-        return rolePhoto;
+    @Column(name = "photo")
+    public String getPhoto() {
+        return photo;
     }
 
-    public void setRolePhoto(String rolePhoto) {
-        this.rolePhoto = rolePhoto;
+    public void setPhoto(String photo) {
+        this.photo = photo;
     }
 
     @Override
@@ -54,12 +54,12 @@ public class Role {
         }
         Role that = (Role) o;
         return id == that.id &&
-                Objects.equals(roleName, that.roleName) &&
-                Objects.equals(rolePhoto, that.rolePhoto);
+                Objects.equals(name, that.name) &&
+                Objects.equals(photo, that.photo);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, roleName, rolePhoto);
+        return Objects.hash(id, name, photo);
     }
 }

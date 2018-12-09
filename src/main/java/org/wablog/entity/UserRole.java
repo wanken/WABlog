@@ -1,18 +1,18 @@
-package org.wablog.domain;
+package org.wablog.entity;
 
 import javax.persistence.*;
 import java.util.Objects;
 
 /**
  * @author waver
- * @date 2018/10/25 11:42
+ * @date 2018/10/31 11:57
  */
 @Entity
-@Table(name = "user_profile", schema = "wablog")
-public class UserProfile {
+@Table(name = "user_role", schema = "wablog")
+public class UserRole {
     private long id;
     private long refUserId;
-    private long refProfileId;
+    private long refRoleId;
 
     @Id
     @Column(name = "id")
@@ -35,13 +35,13 @@ public class UserProfile {
     }
 
     @Basic
-    @Column(name = "ref_profile_id")
-    public long getRefProfileId() {
-        return refProfileId;
+    @Column(name = "ref_role_id")
+    public long getRefRoleId() {
+        return refRoleId;
     }
 
-    public void setRefProfileId(long refProfileId) {
-        this.refProfileId = refProfileId;
+    public void setRefRoleId(long refRoleId) {
+        this.refRoleId = refRoleId;
     }
 
     @Override
@@ -52,14 +52,14 @@ public class UserProfile {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        UserProfile that = (UserProfile) o;
+        UserRole that = (UserRole) o;
         return id == that.id &&
                 refUserId == that.refUserId &&
-                refProfileId == that.refProfileId;
+                refRoleId == that.refRoleId;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, refUserId, refProfileId);
+        return Objects.hash(id, refUserId, refRoleId);
     }
 }

@@ -2,38 +2,237 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0311658-57d9-42e7-a6fd-7d8ebe77c764" name="Default Changelist" comment="修改数据库命名,生成实体类">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/config/FaviconConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Authority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/BlogContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/BlogSetting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Contributors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/GroupRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Photo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Profile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/UserGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/UserProfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/domain/UserSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/web/ConfigController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/web/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/left.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/common/vo/WaUserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/wablog/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome-all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/google-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/WaBlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/WaBlogApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/web/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/Authority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/BlogContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/BlogContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/BlogSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/BlogSetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Contributors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/Contributors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/GroupRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/GroupRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Photo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/Photo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/UserGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/UserGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/domain/UserSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/entity/UserSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/wablog/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/wablog/web/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/now-ui-kit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/now-ui-kit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/now-ui-kit.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/now-ui-kit.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/now-ui-kit.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/now-ui-kit.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/demo/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/demo/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/nucleo-license.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/nucleo-license.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/nucleo-outline.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/nucleo-outline.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/nucleo-outline.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/nucleo-outline.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/nucleo-outline.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/nucleo-outline.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/fonts/nucleo-outline.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/nucleo-outline.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/apple-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/apple-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/avatar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/bg1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/bg1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/bg11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/bg11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/bg3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/bg3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/bg4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/bg4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/bg5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/bg5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/bg6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/bg6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/bg7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/bg7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/bg8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/bg8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/blurred-image-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/blurred-image-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/creative-tim-white-slim2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/creative-tim-white-slim2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/default-avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/default-avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/eva.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/eva.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/AD.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/AD.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/AE.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/AE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/AG.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/AG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/AM.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/AM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/AR.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/AR.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/AT.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/AT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/AU.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/AU.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/BE.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/BE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/BF.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/BF.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/BG.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/BG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/BO.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/BO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/BR.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/BR.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/CA.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/CA.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/CD.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/CD.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/CG.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/CG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/CH.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/CH.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/CL.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/CL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/CM.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/CM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/CN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/CN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/CO.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/CO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/CZ.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/CZ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/DE.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/DE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/DJ.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/DJ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/DK.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/DK.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/DZ.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/DZ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/EE.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/EE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/EG.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/EG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/ES.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/ES.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/FI.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/FI.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/FR.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/FR.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/GA.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/GA.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/GB.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/GB.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/GM.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/GM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/GT.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/GT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/HN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/HN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/HT.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/HT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/HU.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/HU.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/ID.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/ID.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/IE.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/IE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/IL.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/IL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/IN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/IN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/IQ.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/IQ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/IR.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/IR.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/IT.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/IT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/JM.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/JM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/JO.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/JO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/JP.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/JP.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/KG.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/KG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/KN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/KN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/KP.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/KP.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/KR.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/KR.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/KW.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/KW.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/KZ.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/KZ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/LA.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/LA.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/LB.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/LB.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/LC.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/LC.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/LS.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/LS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/LU.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/LU.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/LV.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/LV.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/MG.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/MG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/MK.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/MK.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/ML.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/ML.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/MM.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/MM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/MT.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/MT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/MX.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/MX.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/NA.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/NA.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/NE.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/NE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/NG.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/NG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/NI.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/NI.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/NL.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/NL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/NO.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/NO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/OM.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/OM.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/PA.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/PA.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/PE.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/PE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/PG.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/PG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/PK.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/PK.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/PL.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/PL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/PT.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/PT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/PY.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/PY.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/QA.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/QA.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/RO.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/RO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/RU.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/RU.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/RW.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/RW.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/SA.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/SA.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/SE.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/SE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/SG.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/SG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/SL.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/SL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/SN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/SN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/SO.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/SO.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/SV.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/SV.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/TD.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/TD.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/TJ.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/TJ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/TL.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/TL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/TR.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/TR.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/TZ.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/TZ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/UA.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/UA.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/US.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/US.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/VE.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/VE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/VN.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/VN.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/flags/YE.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/flags/YE.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/header.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/header.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/hero-image-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/hero-image-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/hero-image-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/hero-image-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/hero-image-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/hero-image-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/invision-white-slim.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/invision-white-slim.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/julie.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/julie.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/landing.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/landing.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/login.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/login.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/logo-square.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/logo-square.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/now-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/now-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/nucleo-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/nucleo-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img/ryan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/ryan.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/core/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/core/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/core/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/core/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/core/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/core/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/now-ui-kit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/now-ui-kit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/now-ui-kit.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/now-ui-kit.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/now-ui-kit.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/now-ui-kit.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/plugins/bootstrap-datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/bootstrap-datepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/plugins/bootstrap-switch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/bootstrap-switch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/plugins/google-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/google-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/plugins/nouislider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/plugins/nouislider.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_alerts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_alerts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_badges.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_badges.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_carousel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_carousel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_checkboxes-radio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_checkboxes-radio.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_dropdown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_example-pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_example-pages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_footers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_footers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_images.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_images.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_inputs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_inputs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_misc.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_misc.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_modals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_modals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_nucleo-outline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_nucleo-outline.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_pagination.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_pills.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_pills.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_popups.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_popups.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_progress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_progress.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_responsive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_sections.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_sections.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_tabs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_tabs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/cards/_card-plain.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/cards/_card-plain.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/cards/_card-signup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/cards/_card-signup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/mixins/_badges.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/mixins/_badges.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/mixins/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/mixins/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/mixins/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/mixins/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/mixins/_datepicker.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/mixins/_datepicker.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/mixins/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/mixins/_dropdown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/mixins/_inputs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/mixins/_inputs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/mixins/_modals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/mixins/_modals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/mixins/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/mixins/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/mixins/_pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/mixins/_pages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/mixins/_popovers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/mixins/_popovers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/mixins/_transparency.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/mixins/_transparency.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/mixins/_vendor-prefixes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/mixins/_vendor-prefixes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/plugins/_plugin-bootstrap-switch.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/plugins/_plugin-bootstrap-switch.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/plugins/_plugin-datepicker.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/plugins/_plugin-datepicker.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/scss/now-ui-kit/plugins/_plugin-nouislider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scss/now-ui-kit/plugins/_plugin-nouislider.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/wablog/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/wablog/TestMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/signin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/signup.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,186 +266,8 @@
         <item name="wablog@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="wablog@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="wablog: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
     </expand>
     <select />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="107624129">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="gitignore" value="1" />
-          <entry key="java" value="1" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="7" />
-          <entry key="xml" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="7" />
-          <entry key="XML" value="4" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="266200270">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="2" />
-          <entry key="gitattributes" value="1" />
-          <entry key="gitignore" value="1" />
-          <entry key="ico" value="1" />
-          <entry key="java" value="5" />
-          <entry key="properties" value="1" />
-          <entry key="svg" value="1" />
-          <entry key="swf" value="1" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="Image" value="1" />
-          <entry key="JAVA" value="5" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Properties" value="1" />
-          <entry key="SVG" value="1" />
-          <entry key="SWF" value="1" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="gitattributes" value="4" />
-          <entry key="gitignore" value="50" />
-          <entry key="html" value="17" />
-          <entry key="xml" value="14" />
-          <entry key="yml" value="30" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="17" />
-          <entry key="PLAIN_TEXT" value="54" />
-          <entry key="XML" value="14" />
-          <entry key="YAML" value="30" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-1274744584">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="19" />
-          <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.42" value="1" />
-          <entry key="project.open.time.44" value="1" />
-          <entry key="project.open.time.47" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.50" value="1" />
-          <entry key="project.open.time.56" value="1" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.63" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="21" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="JavaScript Console" value="12" />
-          <entry key="dummy" value="14" />
-          <entry key="gitignore" value="32" />
-          <entry key="html" value="241" />
-          <entry key="java" value="837" />
-          <entry key="txt" value="53" />
-          <entry key="xml" value="46" />
-          <entry key="yml" value="116" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="241" />
-          <entry key="JAVA" value="837" />
-          <entry key="JavaScript" value="12" />
-          <entry key="PLAIN_TEXT" value="99" />
-          <entry key="XML" value="46" />
-          <entry key="YAML" value="116" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="5" />
-          <entry key="css" value="3" />
-          <entry key="gitattributes" value="1" />
-          <entry key="gitignore" value="1" />
-          <entry key="html" value="19" />
-          <entry key="ico" value="1" />
-          <entry key="java" value="97" />
-          <entry key="jpg" value="3" />
-          <entry key="js" value="2" />
-          <entry key="pom" value="1" />
-          <entry key="sql" value="1" />
-          <entry key="svg" value="1" />
-          <entry key="swf" value="1" />
-          <entry key="txt" value="2" />
-          <entry key="xml" value="6" />
-          <entry key="yml" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="5" />
-          <entry key="CSS" value="3" />
-          <entry key="HTML" value="19" />
-          <entry key="Image" value="4" />
-          <entry key="JAVA" value="97" />
-          <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="SVG" value="1" />
-          <entry key="SWF" value="1" />
-          <entry key="Scratch" value="1" />
-          <entry key="XML" value="7" />
-          <entry key="YAML" value="7" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="WABlog" />
@@ -254,82 +275,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/Photo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/rebel.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="6" column="114" selection-start-line="6" selection-start-column="114" selection-end-line="6" selection-end-column="114" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-            </state>
-          </provider>
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c1a4088b-7451-4385-becc-f584e45fd9f8/console.sql">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/config/WebMvcConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/WaBlogApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/Role.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2175">
-              <caret line="129" column="10" selection-start-line="129" selection-start-column="10" selection-end-line="129" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/UserRole.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/UserSettings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/UserGroup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/UserProfile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
-              <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
+            <state relative-caret-position="420">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -339,46 +307,56 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="Class" />
+        <option value="CSS File" />
+        <option value="HTML File" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="FindBugs-IDEA-Workspace">
-    <toolWindowEditorPreview>false</toolWindowEditorPreview>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>myba</find>
-      <find>ssPathScanningCandidateComponentProvider</find>
-      <find>mapperS</find>
-      <find>m</find>
-      <find>mybatis</find>
-      <find>valueOf</find>
-      <find>teacherUploadFile</find>
-      <find>href=&quot;./</find>
-      <find>src=&quot;./</find>
       <find>container</find>
       <find>..</find>
       <find>springfox</find>
       <find>swagger</find>
       <find>, catalog = &quot;&quot;)</find>
       <find>spring-boot</find>
-      <find>, catalog = &quot;&quot;</find>
-      <find>mysql</find>
       <find>alibaba</find>
-      <find>tomcat</find>
       <find>page</find>
       <find>oa</find>
+      <find>href=&quot;..</find>
+      <find>src=&quot;..</find>
+      <find>&lt;URL&gt;</find>
+      <find>../assets</find>
+      <find>text/html</find>
+      <find>.login-page</find>
+      <find>security</find>
+      <find>/assets</find>
+      <find>roles</find>
+      <find>, catalog = &quot;&quot;</find>
+      <find>roleName</find>
+      <find>rolePhoto</find>
+      <find>EndpointId</find>
+      <find>jpa</find>
+      <find>actuate</find>
+      <find>Collection</find>
+      <find>tomcat</find>
+      <find>jdbc</find>
+      <find>mysql</find>
+      <find>authorities</find>
+      <find>Authorities</find>
     </findStrings>
     <replaceStrings>
-      <replace>th:href=&quot;@{</replace>
-      <replace>th:src=&quot;@{</replace>
       <replace>@{</replace>
       <replace>)</replace>
+      <replace>th:href=&quot;@{</replace>
+      <replace>th:src=&quot;@{</replace>
+      <replace>/assets</replace>
       <replace />
+      <replace>name</replace>
+      <replace>photo</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -392,40 +370,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/static/assets/js/plugins/google-api.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/header.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/controller/ConfigController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/footer.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/left.html" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/config/FaviconConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WAlbumEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WBlogEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WBlogContextEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WBlogSettingEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WContributorsEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WGroupRoleEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WPermissionEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WPhotoEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WProfileEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WRoleEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WUserEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WUserGroupEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WUserProfileEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WUserRoleEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/WUserSettingsEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/banner.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/domain/WblogEntity.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/wablog/TestMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/domain/BlogContextEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/domain/UserEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/repository/UserEntityRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/domain/AuthorityEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/domain/BlogContext.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/wablog/domain/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/wablog/domain/Album.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/wablog/domain/Blog.java" />
@@ -440,46 +384,77 @@
         <option value="$PROJECT_DIR$/src/main/java/org/wablog/domain/UserProfile.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/wablog/domain/UserRole.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/wablog/domain/UserSettings.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/wablog/TestMain.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/assets/css/google-font.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/assets/css/fontawesome-all.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login1.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/footer.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/header.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/test/UserEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/Photo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/Profile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/Album.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/Authority.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/Blog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/BlogContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/BlogSetting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/Contributors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/GroupRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/UserGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/UserProfile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/UserSettings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/common/vo/WaUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/common/vo/WaUserDetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/repository/RoleRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/web/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/config/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/UserRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/WaBlogApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/wablog/config/WebMvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/wablog/entity/User.java" />
       </list>
     </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="WABlog/invalid/JRebel" />
+    </ignored-facets>
   </component>
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="C:\Users\waver\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="WABlog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="WABlog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="WABlog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="697" />
-    <option name="height" value="775" />
+    <option name="x" value="260" />
+    <option name="y" value="40" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -489,6 +464,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -546,7 +522,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -558,39 +533,46 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="boolean&#9;PSI&#9;JAVA://java.lang.Boolean&#10;mybatis&#9;PSI&#9;JAVA://org.mybatis.spring.batch.MyBatisBatchItemWriter&#10;ssPathScanningCandidateComponentProvider&#9;PSI&#9;JAVA://org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider" />
+    <property name="SearchEverywhereHistoryKey" value="EndpointId&#9;FILE&#9;jar://F:/maven/repository/org/springframework/boot/spring-boot-actuator/2.1.0.RELEASE/spring-boot-actuator-2.1.0.RELEASE.jar!/org/springframework/boot/actuate/endpoint/EndpointId.class&#10;endpoint&#9;PSI&#9;JAVA://org.springframework.boot.actuate.endpoint.annotation.Endpoint&#10;boolean&#9;PSI&#9;JAVA://java.lang.Boolean&#10;mybatis&#9;PSI&#9;JAVA://org.mybatis.spring.batch.MyBatisBatchItemWriter&#10;ssPathScanningCandidateComponentProvider&#9;PSI&#9;JAVA://org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540468381287" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542514847268" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/org/wablog" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Debugger_Data_Views_Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.wablog.entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Work\GitHub\wanken\WABlog\src\main\resources\static" />
+      <recent name="G:\GitHub\wanken\GitHub\WABlog\src\main\resources\static\images" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.wablog" />
       <recent name="org" />
       <recent name="org.wanken" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Work\GitHub\wanken\WABlog\src\main\resources\templates" />
-      <recent name="F:\Work\GitHub\wanken\WABlog\src\main\resources" />
-      <recent name="F:\Work\GitHub\wanken\WABlog\src\main\java\org\wablog" />
-      <recent name="G:\GitHub\wanken\GitHub\WABlog\src\test\java\org\wanken\wablog" />
-      <recent name="G:\GitHub\wanken\GitHub\WABlog\src\main\resources\templates" />
-    </key>
     <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="org.wablog.entity" />
+      <recent name="org.wablog.test" />
       <recent name="org.wablog.domain" />
       <recent name="" />
-      <recent name="org.wablog.entity" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\GitHub\wanken\GitHub\WABlog\src\main\resources\static\images" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Work\GitHub\wanken\WABlog\src\main\java\org\wablog\web" />
+      <recent name="F:\Work\GitHub\wanken\WABlog\src\main\java\org\wablog" />
+      <recent name="F:\Work\GitHub\wanken\WABlog\src\main\java\org\wablog\config" />
+      <recent name="F:\Work\GitHub\wanken\WABlog\src\main\resources\templates" />
+      <recent name="F:\Work\GitHub\wanken\WABlog\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -606,17 +588,27 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="WaBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="WaBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="WABlog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.wablog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.wablog.WaBlogApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.WaBlogApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\arkwa\AppData\Roaming\Subversion</configuration>
+    <configuration>C:\Users\waver\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -655,16 +647,91 @@
       <workItem from="1540520574364" duration="4238000" />
       <workItem from="1540535496535" duration="275000" />
       <workItem from="1540535789689" duration="3812000" />
+      <workItem from="1540604686442" duration="18270000" />
+      <workItem from="1540723952128" duration="2047000" />
+      <workItem from="1540729769311" duration="1129000" />
+      <workItem from="1540774654611" duration="1345000" />
+      <workItem from="1540776734808" duration="1185000" />
+      <workItem from="1540783935528" duration="161000" />
+      <workItem from="1540784107250" duration="1374000" />
+      <workItem from="1540787598691" duration="1745000" />
+      <workItem from="1540868783169" duration="6212000" />
+      <workItem from="1540947734590" duration="13085000" />
+      <workItem from="1541033760474" duration="15814000" />
+      <workItem from="1541066920013" duration="1099000" />
+      <workItem from="1541378927665" duration="592000" />
+      <workItem from="1541492923656" duration="596000" />
+      <workItem from="1541819045265" duration="161000" />
+      <workItem from="1541819231505" duration="2297000" />
+      <workItem from="1541826937774" duration="594000" />
+      <workItem from="1541827574054" duration="1084000" />
+      <workItem from="1541910083387" duration="744000" />
+      <workItem from="1541917820666" duration="13000" />
+      <workItem from="1541925430157" duration="708000" />
+      <workItem from="1541937106619" duration="1484000" />
+      <workItem from="1541938767436" duration="1047000" />
+      <workItem from="1541948451331" duration="291000" />
+      <workItem from="1542033351281" duration="1120000" />
+      <workItem from="1542034861047" duration="169000" />
+      <workItem from="1542035306145" duration="1241000" />
+      <workItem from="1542506454886" duration="2582000" />
+      <workItem from="1543842550996" duration="4230000" />
+      <workItem from="1544183454016" duration="2142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121437000" />
+    <option name="totallyTimeSpent" value="205998000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49425286" visible="true" weight="0.22620791" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.491358" visible="true" weight="0.14872068" />
+      <window_info id="Structure" order="1" sideWeight="0.5023112" side_tool="true" weight="0.25642964" />
+      <window_info id="Designer" order="2" />
+      <window_info id="JRebel" order="3" sideWeight="0.50864196" side_tool="true" weight="0.24200426" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" sideWeight="0.50344825" side_tool="true" weight="0.25642964" />
+      <window_info id="Learn" order="8" />
+      <window_info id="Web" order="9" side_tool="true" />
+      <window_info id="Persistence" order="10" sideWeight="0.5103448" side_tool="true" weight="0.2065053" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739584" weight="0.31739572" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.496875" weight="0.40270552" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32819724" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021962" side_tool="true" weight="0.42723492" />
+      <window_info anchor="bottom" id="Statistic" order="12" weight="0.3298647" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3298647" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.503125" side_tool="true" weight="0.15361139" />
+      <window_info anchor="bottom" id="JRebel Executor" order="16" />
+      <window_info anchor="bottom" id="Problems" order="17" weight="0.32848233" />
+      <window_info anchor="bottom" id="Messages" order="18" weight="0.097814776" />
+      <window_info anchor="bottom" id="Database Console" order="19" weight="0.32973805" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven Projects" order="1" weight="0.2260128" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.24946696" />
+      <window_info anchor="right" id="Database" order="7" weight="0.15884861" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info active="true" anchor="right" id="Maven" order="10" visible="true" weight="0.2771855" />
+      <window_info anchor="right" id="Version Control" order="11" show_stripe_button="false" weight="0.32869694" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49195403" visible="true" weight="0.24659607" />
       <window_info id="Structure" order="1" sideWeight="0.5023112" side_tool="true" weight="0.25642964" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -674,26 +741,27 @@
       <window_info id="Favorites" order="7" sideWeight="0.50344825" side_tool="true" weight="0.25642964" />
       <window_info id="Learn" order="8" />
       <window_info id="Web" order="9" side_tool="true" />
-      <window_info id="Persistence" order="10" sideWeight="0.50574714" side_tool="true" weight="0.2647504" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32934132" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31892696" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49853587" weight="0.30849478" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32819724" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32935917" />
-      <window_info anchor="bottom" id="Statistic" order="12" weight="0.3298647" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3298647" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5014641" side_tool="true" weight="0.54083204" />
-      <window_info anchor="bottom" id="JRebel Executor" order="16" />
-      <window_info anchor="bottom" id="Problems" order="17" weight="0.32973805" />
-      <window_info anchor="bottom" id="Messages" order="18" weight="0.55439645" />
+      <window_info id="Persistence" order="10" sideWeight="0.508046" side_tool="true" weight="0.24659607" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32973805" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32786885" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.31892696" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.4978038" weight="0.41140217" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="8" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32819724" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5021962" side_tool="true" weight="0.42771983" />
+      <window_info anchor="bottom" id="Statistic" order="13" weight="0.3298647" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.3298647" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="JRebel Console" order="16" sideWeight="0.5021962" side_tool="true" weight="0.30849478" />
+      <window_info anchor="bottom" id="JRebel Executor" order="17" />
+      <window_info anchor="bottom" id="Problems" order="18" weight="0.32973805" />
+      <window_info anchor="bottom" id="Messages" order="19" weight="0.55439645" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.32980332" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -705,55 +773,10 @@
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info anchor="right" id="Version Control" order="9" show_stripe_button="false" weight="0.32869694" />
       <window_info anchor="right" id="Ant Build" order="10" weight="0.24962178" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2408492" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="JRebel" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Learn" order="8" />
-      <window_info id="Web" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32934132" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32973805" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49853587" visible="true" weight="0.44411325" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32886904" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32935917" />
-      <window_info anchor="bottom" id="Statistic" order="12" weight="0.3298647" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3298647" />
-      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5014641" side_tool="true" weight="0.54083204" />
-      <window_info anchor="bottom" id="JRebel Executor" order="16" />
-      <window_info anchor="bottom" id="Problems" order="17" weight="0.3298647" />
-      <window_info anchor="bottom" id="Messages" order="18" weight="0.32786885" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Maven Projects" order="1" weight="0.32980332" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
-      <window_info anchor="right" id="Version Control" order="9" show_stripe_button="false" weight="0.32869694" />
-      <window_info anchor="right" id="Ant Build" order="10" weight="0.24962178" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改数据库命名,生成实体类" />
@@ -761,14 +784,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/wablog/config/Application.java</url>
-          <line>31</line>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception">
           <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -776,259 +796,246 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.4.RELEASE/spring-boot-2.0.4.RELEASE.jar!/org/springframework/boot/ansi/AnsiColor.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        <state relative-caret-position="199">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/config/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="250">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.6.RELEASE/spring-boot-autoconfigure-2.0.6.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator/2.0.6.RELEASE/spring-boot-actuator-2.0.6.RELEASE.jar!/org/springframework/boot/actuate/endpoint/annotation/Endpoint.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.10.RELEASE/spring-core-5.0.10.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.10.RELEASE/spring-context-5.0.10.RELEASE.jar!/org/springframework/context/annotation/ConfigurationClassEnhancer.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.10.RELEASE/spring-beans-5.0.10.RELEASE.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator-autoconfigure/2.0.6.RELEASE/spring-boot-actuator-autoconfigure-2.0.6.RELEASE.jar!/org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.6.RELEASE/spring-boot-2.0.6.RELEASE.jar!/org/springframework/boot/web/servlet/context/ServletWebServerApplicationContext.class" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.2.RELEASE/spring-beans-5.1.2.RELEASE.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.2.RELEASE/spring-context-5.1.2.RELEASE.jar!/org/springframework/context/annotation/ConfigurationClassEnhancer.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/web/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/web/ConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/repository/RoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/common/vo/WaUserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator-autoconfigure/2.1.0.RELEASE/spring-boot-actuator-autoconfigure-2.1.0.RELEASE.jar!/org/springframework/boot/actuate/autoconfigure/endpoint/web/ServletEndpointManagementContextConfiguration.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/entity/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator/2.1.0.RELEASE/spring-boot-actuator-2.1.0.RELEASE.jar!/org/springframework/boot/actuate/endpoint/EndpointId.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-actuator/2.1.0.RELEASE/spring-boot-actuator-2.1.0.RELEASE-sources.jar!/org/springframework/boot/actuate/endpoint/EndpointId.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/jdbc/Driver.class" />
+    <entry file="jar://D:/Java/jdk1.8.0_162/src.zip!/java/lang/Class.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/entity/Authority.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/security/spring-security-config/5.1.1.RELEASE/spring-security-config-5.1.1.RELEASE.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.class" />
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/security/spring-security-config/5.1.1.RELEASE/spring-security-config-5.1.1.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.java" />
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/security/spring-security-config/5.1.1.RELEASE/spring-security-config-5.1.1.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.java" />
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.0.RELEASE/spring-boot-autoconfigure-2.1.0.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.class" />
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.0.RELEASE/spring-boot-autoconfigure-2.1.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/entity/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.0.RELEASE/spring-boot-2.1.0.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10575">
+          <caret line="485" selection-start-line="485" selection-end-line="485" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/org/apache/tomcat/util/compat/JreCompat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.0.RELEASE/spring-boot-autoconfigure-2.1.0.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="135" column="50" selection-start-line="135" selection-start-column="50" selection-end-line="135" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="90" column="13" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/config/FaviconConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-477">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state>
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/WaBlogApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state>
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <folding>
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/config/WebMvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/config/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/config/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.2.RELEASE/spring-context-5.1.2.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="838">
+          <caret line="787" selection-start-line="787" selection-end-line="787" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/rebel.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="114" selection-start-line="6" selection-start-column="114" selection-end-line="6" selection-end-column="114" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c1a4088b-7451-4385-becc-f584e45fd9f8/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WContributorsEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WGroupRoleEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WPermissionEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WPhotoEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WProfileEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WUserGroupEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WUserProfileEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WUserRoleEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WUserSettingsEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WRoleEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/WaBlogApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/web/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.0.7.RELEASE/spring-security-config-5.0.7.RELEASE.jar!/org/springframework/security/config/annotation/web/AbstractRequestMatcherRegistry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.0.7.RELEASE/spring-security-config-5.0.7.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/AbstractRequestMatcherRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="108" column="30" lean-forward="true" selection-start-line="108" selection-start-column="30" selection-end-line="108" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WUserEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WBlogContext.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WblogEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/WAlbum.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/repository/UserEntityRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/web/ConfigController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-test/5.0.7.RELEASE/spring-security-test-5.0.7.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/web/PageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/config/ApplicationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="78" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/wablog/TestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/Album.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="107" column="10" lean-forward="true" selection-start-line="107" selection-start-column="10" selection-end-line="107" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/Blog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/BlogContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/BlogSetting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/Contributors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/GroupRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="51" column="9" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/Profile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2350">
-          <caret line="140" column="10" selection-start-line="140" selection-start-column="10" selection-end-line="140" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/Authority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="420">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="129" column="10" selection-start-line="129" selection-start-column="10" selection-end-line="129" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/UserSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/UserGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/UserProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1770">
-          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/domain/Photo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/wablog/config/WebMvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1043,6 +1050,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1050,7 +1058,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring</last-edited>
+          <last-edited>Web (WABlog)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1074,7 +1082,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1086,12 +1094,23 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>WABlog</last-edited>
+          <last-edited>JRebel|WABlog</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
